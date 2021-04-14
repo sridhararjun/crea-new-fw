@@ -71,7 +71,8 @@ select {
 }
 
 .team-crea {
-    color: rgb(113, 81, 2);
+    color: rgb(236, 174, 16);
+    font-weight: 100;
 }
 
 input[type=submit] {
@@ -86,5 +87,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: goldenrod;
+    border-color: goldenrod;
 }
