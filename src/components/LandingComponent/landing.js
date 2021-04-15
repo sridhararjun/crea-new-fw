@@ -3,7 +3,7 @@ import CreaLogo from "./crea-logo.png"
 import { useEffect } from "react";
 
 function Landing(){
-    
+
     useEffect(()=>{
         var delayInMilliseconds = 3000;
         setTimeout(function(){
@@ -35,7 +35,7 @@ function Landing(){
                 </a>
             </li>
             <li class="mail">
-                <a href="#">
+                <a href="mailto:crealuxurymetaldecor@gmail.com">
                     <i class="fa fa-envelope"></i>
                     <div class="slider">
                         <p>mail</p>
@@ -43,7 +43,7 @@ function Landing(){
                 </a>
             </li>
             <li class="instagram">
-                <a href="#">
+                <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-instagram"></i>
                     <div class="slider">
                         <p>instagram</p>
@@ -51,7 +51,7 @@ function Landing(){
                 </a>
             </li>
             <li class="facebook">
-                <a href="#">
+                <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-facebook"></i>
                     <div class="slider">
                         <p>facebook</p>
@@ -59,7 +59,7 @@ function Landing(){
                 </a>
             </li>
             <li class="pinterest">
-                <a href="#">
+                <a href="https://in.pinterest.com/business/create/" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-pinterest"></i>
                     <div class="slider">
                         <p>pinterest</p>
@@ -67,7 +67,7 @@ function Landing(){
                 </a>
             </li>
             <li class="youtube">
-                <a href="#">
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-youtube"></i>
                     <div class="slider">
                         <p>youtube</p>
