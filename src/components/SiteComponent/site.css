@@ -89,3 +89,21 @@ input[type=submit] {
 input[type=submit]:hover {
     border-color: goldenrod;
 }
+
+
+/* page transitions */
+
+#home {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
