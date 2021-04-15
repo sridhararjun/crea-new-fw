@@ -17,12 +17,13 @@ html {
     font-style: normal;
 }
 
-.connect-label {
+#connect-label {
     color: -webkit-linear-gradient(45deg, #9e9027, #e6cb00);
     color: goldenrod;
     font-family: Conv_SamarkanNormal-RXGE;
     padding-top: 10px;
     font-size: 1.5rem;
+    opacity: 0;
 }
 
 
@@ -69,6 +70,7 @@ html {
 
 .item-2 li {
     padding-top: 35%;
+    opacity: 0;
 }
 
 .social-icons {
@@ -329,8 +331,11 @@ ul li a {
 
 /* Animations handled here */
 
+
+/* logo animation */
+
 .item-1 {
-    animation: 1s ease-out 0s 1 logoZoomer;
+    animation: 1.5s ease-out 0s 1 logoZoomer;
 }
 
 @keyframes logoZoomer {
@@ -343,8 +348,11 @@ ul li a {
     }
 }
 
-li {
-    animation: fadein 19s;
+
+/* list animation */
+
+.animateNow {
+    animation: 1s ease-in-out 0s 1 fadein;
     animation-fill-mode: forwards;
 }
 
@@ -353,10 +361,12 @@ li:nth-child() {
 }
 
 @keyframes fadein {
-    0% {
-        opacity: 0;
+    from {
+        opacity: 0.2;
+        transform: translate(-100%);
     }
-    100% {
+    to {
         opacity: 1;
+        transform: translate(0%);
     }
 }
