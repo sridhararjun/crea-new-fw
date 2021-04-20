@@ -26,7 +26,7 @@ function Site(){
     }
     return(<article id="home" a name="home">
     <div className="wrapper content">
-        <h1>We&rsquo;ll be back soon!</h1>
+        <h1 id="soon">We&rsquo;ll be back soon!</h1>
         <p>
             If you need to you can always <a href="mailto:crealuxurymetaldecor@gmail.com">contact us</a>,
         </p>
@@ -44,6 +44,8 @@ function Site(){
             <input type="submit" value="Notify"/>
         </form>
         <p id="subscribeSuccess">Thanks!!! Our team will reach out to you in 24hrs...</p>
+        <p id="security-policy">Your data is safe with us.</p>
+        <p id="copyright">&copy; Copyright 2021 CREA</p>
     </div>
 </article>);
 }
