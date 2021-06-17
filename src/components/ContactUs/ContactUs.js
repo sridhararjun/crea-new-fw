@@ -65,7 +65,8 @@ function ContactUs() {
             <div className="captionWrapper"><h2 className="caption">C</h2> <p className="captionDesc">Connect with us</p></div>
             <img src={mailbox} className='rssIcon alignment' />
             <div className="captionWrapper"><h2 className="caption">R</h2> <p className="captionDesc">Reach us</p></div>
-            <p className="alignment">9626040395 | 9787444059</p>
+            <p className="alignment">
+              <a href="tel:9787444059">9626040395 </a>|  <a href="tel:9787444059">9787444059</a></p>
             <div className="captionWrapper"><h2 className="caption">E</h2> <p className="captionDesc">Engage with us</p></div>
             <a href='' ><img src={fb} className='rssIcon alignment fb' /></a>
             <a href='' ><img src={instagram} className='rssIcon alignment insta' /></a>
