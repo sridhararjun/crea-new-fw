@@ -1,10 +1,9 @@
-.contactusWrapper{
-    margin-top: 70px;
-}
 .contactusWrapper .creaLogo{
     height: 400px;
 }
-
+.contactusWrapper a{
+    color: black;
+}
 .wrapper{
     padding-left: 30px;
     padding-right: 30px;
@@ -100,6 +99,9 @@ textarea, .phoneNum {
     .description{
         display: flex;
         justify-content: center;
+    }
+    .contactusWrapper{
+        margin-top: 70px;
     }
   }
   @media screen and (max-width: 400px) {
