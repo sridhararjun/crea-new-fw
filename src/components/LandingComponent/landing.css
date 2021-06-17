@@ -1,6 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 html {
-    background: url(crea-bg.jpg) no-repeat center fixed;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -31,6 +30,7 @@ html {
 /*  */
 
 .container {
+    background: url(crea-bg.jpg) no-repeat center fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;

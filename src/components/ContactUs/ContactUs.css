@@ -59,7 +59,7 @@ textarea, .phoneNum {
     border: none;
     border-radius: 4px;
     padding-left: 10px;
-    /* padding-top: 10px; */
+    width: 256px;
   }
   textarea:focus, .phoneNum:focus {
     border:none;
@@ -67,7 +67,6 @@ textarea, .phoneNum {
 .phoneNum{
     margin-top: 12px;
     height: 28px;
-    width: 256px;
 }
   textarea::placeholder, .phoneNum::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-weight: bold;
