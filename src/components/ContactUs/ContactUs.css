@@ -1,0 +1,115 @@
+.contactusWrapper{
+    margin-top: 70px;
+}
+.contactusWrapper .creaLogo{
+    height: 400px;
+}
+
+.wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.leftpanel{
+    background-color: #fff;
+}
+
+.textWrapper{
+    background-color: #fff;
+    padding-bottom: 50px;
+
+}
+.textWrapper h1 {
+    letter-spacing: 4px;
+}
+.textWrapper h1,  .textWrapper .caption{
+    color:goldenrod;
+}
+.textWrapper .caption, .textWrapper .captionDesc{
+    display: inline;
+}
+.textWrapper .captionDesc{
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+.captionWrapper{
+    margin-bottom: 8px;
+}
+.alignment{
+    margin: 10px 0 10px 32px;
+}
+.youtubeIcon, .linkedin, .insta{
+    margin: 10px 0 10px 12px;
+}
+.rssIcon{
+    width: 35px;
+}
+.youtubeIcon{
+    width: 45px;
+}
+textarea{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+textarea, .phoneNum {
+    resize: none;
+    background-color: #f1f0f0;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+    width: 256px;
+  }
+  textarea:focus, .phoneNum:focus {
+    border:none;
+  }
+.phoneNum{
+    margin-top: 12px;
+    height: 28px;
+}
+  textarea::placeholder, .phoneNum::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: bold;
+    color: black;
+  }
+  
+  textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+  }
+  
+  textarea::-ms-input-placeholder { /* Microsoft Edge */
+    font-weight: bold;
+    color: black;
+  }
+  .formSubmit{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: #f6bb2f;
+    margin: 12px 80px;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    .imagewrapper{
+        border-right: 2px solid grey;
+        margin: 70px 0 50px 0;
+    }
+    .description{
+        display: flex;
+        justify-content: center;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .contactusWrapper .creaLogo{
+        width: 100%;
+    }
+  }
+  @media screen and (min-width: 400px) and (max-width: 768px){
+    .textWrapper, .leftpanel{
+        width: 400px;
+        margin: 0 auto;
+    }
+  }
