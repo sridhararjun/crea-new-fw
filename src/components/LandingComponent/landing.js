@@ -27,7 +27,7 @@ function Landing(){
     <div class="item-2">
         <ul id="icons" class="social-icons">
             <li class="website">
-                <a href="/site#soon">
+                <a href="/site">
                     <i class="fa fa-safari" onClick="handleHoverClick"></i>
                     <div class="slider">
                         <p>Website</p>
