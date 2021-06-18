@@ -1,57 +1,91 @@
-.contactusWrapper .creaLogo{
+.contactusWrapper .creaLogo {
     height: 400px;
 }
-.contactusWrapper a{
+
+.contactusWrapper a {
     color: black;
 }
-.wrapper{
+
+.wrapper {
     padding-left: 30px;
     padding-right: 30px;
 }
-.leftpanel{
+
+.leftpanel {
     background-color: #fff;
 }
 
-.textWrapper{
+.textWrapper {
     background-color: #fff;
     padding-bottom: 50px;
-
 }
+
 .textWrapper h1 {
     letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
 }
-.textWrapper h1,  .textWrapper .caption{
-    color:goldenrod;
+
+.textWrapper p {
+    letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
 }
-.textWrapper .caption, .textWrapper .captionDesc{
+
+.textWrapper h1,
+.textWrapper .caption {
+    color: goldenrod;
+}
+
+.textWrapper h2 {
+    letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.textWrapper .caption,
+.textWrapper .captionDesc {
     display: inline;
 }
-.textWrapper .captionDesc{
+
+.textWrapper .captionDesc {
     font-size: 22px;
     letter-spacing: 4px;
     margin-left: 12px;
     font-weight: bold;
 }
-.captionWrapper{
+
+.captionWrapper {
     margin-bottom: 8px;
 }
-.alignment{
+
+.alignment {
     margin: 10px 0 10px 32px;
 }
-.youtubeIcon, .linkedin, .insta{
+
+.youtubeIcon,
+.linkedin,
+.insta {
     margin: 10px 0 10px 12px;
 }
-.rssIcon{
+
+.rssIcon {
     width: 35px;
 }
-.youtubeIcon{
+
+.youtubeIcon {
     width: 45px;
 }
-textarea{
+
+textarea {
     padding-left: 10px;
     padding-top: 10px;
 }
-textarea, .phoneNum {
+
+.separatorMob hr {
+    width: 100px;
+    color: goldenrod;
+}
+
+textarea,
+.phoneNum {
     resize: none;
     background-color: #f1f0f0;
     display: block;
@@ -59,30 +93,39 @@ textarea, .phoneNum {
     border-radius: 4px;
     padding-left: 10px;
     width: 256px;
-  }
-  textarea:focus, .phoneNum:focus {
-    border:none;
-  }
-.phoneNum{
+}
+
+textarea:focus,
+.phoneNum:focus {
+    border: none;
+}
+
+.phoneNum {
     margin-top: 12px;
     height: 28px;
 }
-  textarea::placeholder, .phoneNum::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+textarea::placeholder,
+.phoneNum::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-weight: bold;
     color: black;
-  }
-  
-  textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+}
+
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     font-weight: bold;
     color: black;
     margin-left: 10px;
-  }
-  
-  textarea::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
     font-weight: bold;
     color: black;
-  }
-  .formSubmit{
+}
+
+.formSubmit {
     width: 100px;
     height: 30px;
     border: none;
@@ -90,28 +133,37 @@ textarea, .phoneNum {
     background-color: #f6bb2f;
     margin: 12px 80px;
     cursor: pointer;
-  }
-  @media screen and (min-width: 768px) {
-    .imagewrapper{
+}
+
+@media screen and (min-width: 768px) {
+    .imagewrapper {
         border-right: 2px solid grey;
         margin: 70px 0 50px 0;
     }
-    .description{
+    .description {
         display: flex;
         justify-content: center;
     }
-    .contactusWrapper{
+    .contactusWrapper {
         margin-top: 70px;
     }
-  }
-  @media screen and (max-width: 400px) {
-    .contactusWrapper .creaLogo{
+}
+
+@media screen and (max-width: 400px) {
+    .contactusWrapper .creaLogo {
         width: 100%;
     }
-  }
-  @media screen and (min-width: 400px) and (max-width: 768px){
-    .textWrapper, .leftpanel{
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .textWrapper,
+    .leftpanel {
         width: 400px;
         margin: 0 auto;
     }
-  }
+    .textWrapper h1 {
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
