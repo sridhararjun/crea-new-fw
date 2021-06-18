@@ -22,8 +22,6 @@ function ContactUs() {
   const handleEmailOnChange = (event) => {
     const { target: { value } } = event;
     setEmail(value);
-    console.log('emailValue', event.target.value);
-
   }
 
   const handlePhoneOnChange = (event) => {
@@ -35,19 +33,21 @@ function ContactUs() {
     e.preventDefault();
     if (email !== '' && queryField !== '' && phone !== '') {
       console.log(email, queryField, phone);
-      // make use of "email" and "queryField" to send Email
       var reference = db.ref('subscriptions');
 
       var data = {
           email: email,
-          query: queryField,
+          queryField: queryField,
           phone: phone
       }
-      // var successDialog = document.getElementById("subscribeSuccess");
+      var successDialog = document.getElementById("subscribeSuccess");
 
-      emailjs.sendForm('service_nne8783', 'template_61m5d2i', e.target, 'user_v0kDydSuiLzAe28AfIn5m')
+      emailjs.init('user_v0kDydSuiLzAe28AfIn5m');
+      emailjs.sendForm('service_nne8783', 'template_61m5d2i', e.target)
          .then((result) => {
           //  successDialog.classList.add("showSuccess");
+          successDialog.style.display='block';
+          console.log("Success")
           }, (error) => {
           console.log(error.text);
     });
@@ -99,9 +99,10 @@ function ContactUs() {
             <textarea id="query" name="w3review" rows="4" cols="30" placeholder="We like to hear you" onChange={handleQueryOnChange}></textarea>
             <textarea id="email" name="w3review" rows="4" cols="30" placeholder="Email" onChange={handleEmailOnChange}></textarea>
             <input type="tel" name="phone" placeholder="Phone" className="phoneNum" maxLength="10" onChange={handlePhoneOnChange}></input>
-            <input type="submit" value="Notify"/>
+            <input id='submit' type="submit" value="Notify"/>
             </form>
             </div>
+            <p id="subscribeSuccess">Thanks!!! Our team will reach out to you in 24hrs...</p>
           </div>
         </div>
       </div>
