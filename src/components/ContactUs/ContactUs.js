@@ -40,12 +40,13 @@ function ContactUs() {
           queryField: queryField,
           phone: phone
       }
-      // var successDialog = document.getElementById("subscribeSuccess");
+      var successDialog = document.getElementById("subscribeSuccess");
 
       emailjs.init('user_v0kDydSuiLzAe28AfIn5m');
       emailjs.sendForm('service_nne8783', 'template_61m5d2i', e.target)
          .then((result) => {
           //  successDialog.classList.add("showSuccess");
+          successDialog.style.display='block';
           console.log("Success")
           }, (error) => {
           console.log(error.text);
@@ -101,6 +102,7 @@ function ContactUs() {
             <input id='submit' type="submit" value="Notify"/>
             </form>
             </div>
+            <p id="subscribeSuccess">Thanks!!! Our team will reach out to you in 24hrs...</p>
           </div>
         </div>
       </div>
