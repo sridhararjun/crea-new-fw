@@ -31,7 +31,7 @@ function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email !== '' && queryField !== '' && phone !== '') {
+    if (queryField !== '' && phone !== '') {
       console.log(email, queryField, phone);
       var reference = db.ref('subscriptions');
 
@@ -43,33 +43,17 @@ function ContactUs() {
       var successDialog = document.getElementById("subscribeSuccess");
 
       emailjs.init('user_v0kDydSuiLzAe28AfIn5m');
-      emailjs.sendForm('service_nne8783', 'template_61m5d2i', e.target)
+      emailjs.send('service_nne8783', 'template_61m5d2i', {emaild:email,queryField:queryField,phone:phone})
          .then((result) => {
-          //  successDialog.classList.add("showSuccess");
-          successDialog.style.display='block';
+          successDialog.classList.add('showSuccess');
           console.log("Success")
           }, (error) => {
           console.log(error.text);
     });
       reference.push(data);
-
-
     }
-    //   var reference = db.ref('subscriptions');
-
-    //   var data = {
-    //       email: email
-    //   }
-    //   var successDialog = document.getElementById("subscribeSuccess");
-
-    //   emailjs.sendForm('service_nne8783', 'template_61m5d2i', e.target, 'user_v0kDydSuiLzAe28AfIn5m')
-    //      .then((result) => {
-    //        successDialog.classList.add("showSuccess");
-    //       }, (error) => {
-    //       console.log(error.text);
-    // });
-    //   reference.push(data);
   }
+
   return (
     <div className="contactusWrapper">
       <div className='description'>
@@ -96,8 +80,8 @@ function ContactUs() {
             <div className="captionWrapper"><h2 className="caption">A</h2> <p className="captionDesc">Ask us</p></div>
             <div className='alignment'>
               <form onSubmit={handleSubmit}>
-            <textarea id="query" name="w3review" rows="4" cols="30" placeholder="We like to hear you" onChange={handleQueryOnChange}></textarea>
-            <textarea id="email" name="w3review" rows="4" cols="30" placeholder="Email" onChange={handleEmailOnChange}></textarea>
+            <textarea id="query" name="w3review" rows="4" cols="30" placeholder="Please type your query here..." onChange={handleQueryOnChange}></textarea>
+            <input type="email" className="email" name="w3review" rows="4" cols="30" placeholder="Email (Optional)" onChange={handleEmailOnChange}></input>
             <input type="tel" name="phone" placeholder="Phone" className="phoneNum" maxLength="10" onChange={handlePhoneOnChange}></input>
             <input id='submit' type="submit" value="Notify"/>
             </form>
