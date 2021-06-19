@@ -105,7 +105,8 @@ textarea {
 }
 
 textarea,
-.phoneNum {
+.phoneNum,
+.email {
     margin-top: 0px !important;
     resize: none;
     background-color: #f1f0f0;
@@ -117,17 +118,20 @@ textarea,
 }
 
 textarea:focus,
-.phoneNum:focus {
+.phoneNum:focus,
+.email:focus {
     border: none;
 }
 
-.phoneNum {
+.phoneNum,
+.email {
     margin-top: 12px;
     height: 28px;
 }
 
 textarea::placeholder,
-.phoneNum::placeholder {
+.phoneNum::placeholder,
+.email::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-weight: bold;
     color: black;
@@ -190,37 +194,36 @@ textarea::-ms-input-placeholder {
     .separatorMob hr {
         display: block;
     }
+    .imagewrapper {
+        width: 50%;
+    }
 }
 
 #subscribeSuccess {
-    display: none;
+    opacity: 0;
     color: rgb(236, 174, 16);
     font-weight: 500;
-    /* font-variant: normal;
-    font-kerning: normal; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-/* .showSuccess {
+.showSuccess {
     animation: 10s ease-in-out fadeinout;
-} */
+}
 
-
-/* @keyframes fadeinout {
+@keyframes fadeinout {
     0%,
     100% {
         opacity: 0;
     }
-    20%,
+    10%,
     80% {
-        opacity: 0.6;
+        opacity: 1;
     }
     30%,
     70% {
-        opacity: 0.9;
+        opacity: 1;
     }
     50% {
         opacity: 1;
     }
-} */
+}
