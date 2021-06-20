@@ -282,6 +282,10 @@ ul li.youtube div.slider {
     background: transparent;
 }
 
+ul li.behance div.slider {
+    background: transparent;
+}
+
 ul li.website div.slider {
     background: transparent;
 }
@@ -370,4 +374,9 @@ li:nth-child() {
         opacity: 1;
         transform: translate(0%);
     }
+}
+
+footer {
+    color: goldenrod;
+    margin-bottom: 20px;
 }

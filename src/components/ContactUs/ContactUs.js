@@ -75,18 +75,20 @@ function ContactUs() {
             <p className="alignment">
               <a href="tel:9626040395">9626040395 </a>|  <a href="tel:9787444059">9787444059</a></p>
             <div className="captionWrapper"><h2 className="caption">E</h2> <p className="captionDesc">Engage with us</p></div>
-            <a href="https://www.facebook.com/Crea-Luxury-Metal-Decor-102304805235829/?ti=as" target="_blank" rel="noopener noreferrer"><img src={fb} className='rssIcon alignment fb' /></a>
-            <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer"><img src={instagram} className='rssIcon alignment insta' /></a>
-            {/* <a href="https://www.linkedin.com/in/crea-luxury-metal-decor-684617213" target="_blank" rel="noopener noreferrer" > <img src={linkedin} className='rssIcon alignment linkedin' /></a> */}
-            <a href="https://www.behance.net/crealuxurya079" target="_blank" rel="noopener noreferrer"><img src={youtube} className='rssIcon alignment youtubeIcon' /></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src={pinterest} className='rssIcon alignment pinterestIcon' /></a>
-            <a href="https://www.behance.net/crealuxurya079" target="_blank" rel="noopener noreferrer"><img src={behance} className='rssIcon alignment behanceIcon' /></a>
+            <a href="https://bit.ly/2TMPmSP" target="_blank" rel="noopener noreferrer"><img src={fb} className='rssIcon alignment fb' /></a>
+            <a href="https://bit.ly/3vCL3a0" target="_blank" rel="noopener noreferrer"><img src={instagram} className='rssIcon alignment insta' /></a>
+            <a href="https://bit.ly/3xCb4Ye" target="_blank" rel="noopener noreferrer"><img src={youtube} className='rssIcon alignment youtubeIcon' /></a>
+            <a href="https://pin.it/31U2Eky" target="_blank" rel="noopener noreferrer"><img src={pinterest} className='rssIcon alignment pinterestIcon' /></a>
+            <a href="https://bit.ly/3zJY2do" target="_blank" rel="noopener noreferrer"><img src={behance} className='rssIcon alignment behanceIcon' /></a>
             <div className="captionWrapper"><h2 className="caption">A</h2> <p className="captionDesc">Ask us</p></div>
             <div className='alignment'>
               <form onSubmit={handleSubmit}>
-            <textarea id="query" name="w3review" rows="4" cols="30" placeholder="Please type your query here..." onChange={handleQueryOnChange}></textarea>
-            <input type="email" className="email" name="w3review" rows="4" cols="30" placeholder="Email (Optional)" onChange={handleEmailOnChange}></input>
-            <input type="tel" name="phone" placeholder="Phone" className="phoneNum" maxLength="10" onChange={handlePhoneOnChange}></input>
+            <textarea id="query" name="w3review" rows="4" cols="30" 
+                required placeholder="Please type your query here..." onChange={handleQueryOnChange}></textarea>
+            <input type="email" className="email" name="w3review" rows="4" cols="30" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email (Optional)" onChange={handleEmailOnChange}></input>
+            <input type="tel" name="phone" 
+                required pattern="(7|8|9)\d{9}" placeholder="Phone" className="phoneNum" maxLength="10" onChange={handlePhoneOnChange}></input>
             <input id='submit' type="submit" value="Notify"/>
             </form>
             </div>

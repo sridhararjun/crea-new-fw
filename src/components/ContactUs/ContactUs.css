@@ -104,6 +104,11 @@ textarea {
 
 #submit {
     margin-top: 10px;
+    background-image: linear-gradient(gold, goldenrod);
+    border: none;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
 }
 
 textarea,
@@ -228,4 +233,9 @@ textarea::-ms-input-placeholder {
     50% {
         opacity: 1;
     }
+}
+
+footer {
+    color: goldenrod;
+    margin-bottom: 20px;
 }
