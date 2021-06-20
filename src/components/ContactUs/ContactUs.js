@@ -8,6 +8,8 @@ import fb from '../LandingComponent/fb.png'
 import instagram from '../LandingComponent/insta.jpeg'
 import youtube from '../LandingComponent/youtube.png'
 import linkedin from '../LandingComponent/linkedin.png'
+import pinterest from '../LandingComponent/pinterest.png'
+import behance from '../LandingComponent/behance.png'
 
 function ContactUs() {
   const [email, setEmail] = useState("");
@@ -73,10 +75,12 @@ function ContactUs() {
             <p className="alignment">
               <a href="tel:9626040395">9626040395 </a>|  <a href="tel:9787444059">9787444059</a></p>
             <div className="captionWrapper"><h2 className="caption">E</h2> <p className="captionDesc">Engage with us</p></div>
-            <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer"><img src={fb} className='rssIcon alignment fb' /></a>
+            <a href="https://www.facebook.com/Crea-Luxury-Metal-Decor-102304805235829/?ti=as" target="_blank" rel="noopener noreferrer"><img src={fb} className='rssIcon alignment fb' /></a>
             <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer"><img src={instagram} className='rssIcon alignment insta' /></a>
-            <a href="https://in.pinterest.com/business/create/" target="_blank" rel="noopener noreferrer" > <img src={linkedin} className='rssIcon alignment linkedin' /></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src={youtube} className='rssIcon alignment youtubeIcon' /></a>
+            {/* <a href="https://www.linkedin.com/in/crea-luxury-metal-decor-684617213" target="_blank" rel="noopener noreferrer" > <img src={linkedin} className='rssIcon alignment linkedin' /></a> */}
+            <a href="https://www.behance.net/crealuxurya079" target="_blank" rel="noopener noreferrer"><img src={youtube} className='rssIcon alignment youtubeIcon' /></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src={pinterest} className='rssIcon alignment pinterestIcon' /></a>
+            <a href="https://www.behance.net/crealuxurya079" target="_blank" rel="noopener noreferrer"><img src={behance} className='rssIcon alignment behanceIcon' /></a>
             <div className="captionWrapper"><h2 className="caption">A</h2> <p className="captionDesc">Ask us</p></div>
             <div className='alignment'>
               <form onSubmit={handleSubmit}>

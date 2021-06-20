@@ -77,7 +77,9 @@
 
 .youtubeIcon,
 .linkedin,
-.insta {
+.insta,
+.behanceIcon,
+.pinterestIcon {
     margin: 10px 0 10px 12px;
 }
 
@@ -160,7 +162,7 @@ textarea::-ms-input-placeholder {
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .imagewrapper {
         border-right: 2px solid grey;
         margin: 70px 0 50px 0;
