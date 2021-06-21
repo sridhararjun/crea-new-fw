@@ -4,7 +4,6 @@ html {
     margin: 0;
     padding: 0;
     top: 0;
-    background-size: cover;
 }
 
 
@@ -362,4 +361,10 @@ li:nth-child() {
 footer {
     color: goldenrod;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        background-repeat: repeat-y;
+    }
 }
