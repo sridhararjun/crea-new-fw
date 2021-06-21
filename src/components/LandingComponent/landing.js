@@ -27,7 +27,7 @@ function Landing(){
     <div class="item-2">
         <ul id="icons" class="social-icons">
             <li class="website">
-                <a href="/site">
+                <a href="/">
                     <i class="fa fa-safari" onClick="handleHoverClick"></i>
                     <div class="slider">
                         <p>Website</p>
@@ -43,7 +43,7 @@ function Landing(){
                 </a>
             </li>
             <li class="instagram">
-                <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer">
+                <a href="https://bit.ly/3vCL3a0" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-instagram"></i>
                     <div class="slider">
                         <p>instagram</p>
@@ -51,7 +51,7 @@ function Landing(){
                 </a>
             </li>
             <li class="facebook">
-                <a href="https://www.instagram.com/crealuxurymetaldecor/" target="_blank" rel="noopener noreferrer">
+                <a href="https://bit.ly/2TMPmSP" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-facebook"></i>
                     <div class="slider">
                         <p>facebook</p>
@@ -59,7 +59,7 @@ function Landing(){
                 </a>
             </li>
             <li class="pinterest">
-                <a href="https://in.pinterest.com/business/create/" target="_blank" rel="noopener noreferrer">
+                <a href="https://pin.it/31U2Eky" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-pinterest"></i>
                     <div class="slider">
                         <p>pinterest</p>
@@ -67,15 +67,24 @@ function Landing(){
                 </a>
             </li>
             <li class="youtube">
-                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://bit.ly/3xCb4Ye" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-youtube"></i>
                     <div class="slider">
                         <p>youtube</p>
                     </div>
                 </a>
             </li>
+            <li class="behance">
+                <a href="https://bit.ly/3zJY2do" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-behance"></i>
+                    <div class="slider">
+                        <p>behance</p>
+                    </div>
+                </a>
+            </li>
         </ul>
     </div>
+    <footer>&copy; 2021 | Crea Luxury Metal Decor</footer>
 </div>);
 }
 

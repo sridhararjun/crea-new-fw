@@ -31,6 +31,8 @@ html {
 
 .container {
     background: url(crea-bg.jpg) no-repeat center fixed;
+    background-size: contain;
+    background-repeat: repeat-x;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,27 +264,7 @@ a {
         background: #4dc247;
     } */
 
-ul li.facebook div.slider {
-    background: transparent;
-}
-
-ul li.pinterest div.slider {
-    background: transparent;
-}
-
-ul li.instagram div.slider {
-    background: transparent;
-}
-
-ul li.mail div.slider {
-    background: transparent;
-}
-
-ul li.youtube div.slider {
-    background: transparent;
-}
-
-ul li.website div.slider {
+ul li div.slider {
     background: transparent;
 }
 
@@ -297,6 +279,11 @@ ul li.website div.slider {
     border-radius: 17px;
     transition: all 0.5s 0.3s ease;
     z-index: -1;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+div.slider:hover {
+    box-shadow: inset 0 0 10px #e6cb00;
 }
 
 .slider p {
@@ -370,4 +357,9 @@ li:nth-child() {
         opacity: 1;
         transform: translate(0%);
     }
+}
+
+footer {
+    color: goldenrod;
+    margin-bottom: 20px;
 }

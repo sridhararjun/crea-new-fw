@@ -77,7 +77,9 @@
 
 .youtubeIcon,
 .linkedin,
-.insta {
+.insta,
+.behanceIcon,
+.pinterestIcon {
     margin: 10px 0 10px 12px;
 }
 
@@ -102,6 +104,11 @@ textarea {
 
 #submit {
     margin-top: 10px;
+    background-image: linear-gradient(gold, goldenrod);
+    border: none;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
 }
 
 textarea,
@@ -125,7 +132,7 @@ textarea:focus,
 
 .phoneNum,
 .email {
-    margin-top: 12px;
+    margin-top: 12px !important;
     height: 28px;
 }
 
@@ -160,7 +167,7 @@ textarea::-ms-input-placeholder {
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .imagewrapper {
         border-right: 2px solid grey;
         margin: 70px 0 50px 0;
@@ -226,4 +233,9 @@ textarea::-ms-input-placeholder {
     50% {
         opacity: 1;
     }
+}
+
+footer {
+    color: goldenrod;
+    margin-bottom: 20px;
 }
