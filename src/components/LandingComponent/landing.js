@@ -1,6 +1,7 @@
 import "./landing.css"
 import CreaLogo from "./crea-logo.png"
 import { useEffect } from "react";
+import Button from "../Button/Button";
 
 function Landing(){
 
@@ -24,6 +25,7 @@ function Landing(){
         <img id="logo" src={CreaLogo} alt="CREA Logo" />
     </div>
     <div id="connect-label">Connect with us through</div>
+    <Button iconName= "fa fa-envelope" btnName= "mail"></Button>
     <div class="item-2">
         <ul id="icons" class="social-icons">
             <li class="website">

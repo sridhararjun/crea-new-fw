@@ -1,0 +1,37 @@
+.listWrapper {
+    padding: 0;
+    list-style: none;
+    background-color: grey;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.listWrapper a {
+    color: black;
+    text-decoration: none;
+}
+.listWrapper i {
+    margin-left: 20px;
+}
+.btnContent{
+    display: inline-block;
+    width: 80%;
+}
+.btnContent p {
+    text-align: center;
+}
+.listWrapper .outerborder{
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: 13px;
+}
+.listWrapper .outerborder:before{
+    border-radius: 100%;
+    display: block;
+    background: white;
+    content: ' ';
+    width: 30px;
+    height: 30px;
+}
