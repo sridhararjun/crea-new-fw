@@ -1,6 +1,7 @@
 import "./landing.css"
 import CreaLogo from "./crea-logo.png"
 import { useEffect } from "react";
+import Button from "../Button/Button";
 
 function Landing(){
 
@@ -24,6 +25,14 @@ function Landing(){
         <img id="logo" src={CreaLogo} alt="CREA Logo" />
     </div>
     <div id="connect-label">Connect with us through</div>
+    <Button iconName= "fa fa-envelope" btnName= "mail" hrefValue="mailto:crealuxurymetaldecor@gmail.com"></Button>
+    <Button iconName= "fa fa-safari" btnName= "Website" hrefValue="/"></Button>
+    <Button iconName= "fa fa-instagram" btnName= "instagram" hrefValue="https://bit.ly/3vCL3a0"></Button>
+    <Button iconName= "fa fa-facebook" btnName= "facebook" hrefValue="https://bit.ly/2TMPmSP"></Button>
+    <Button iconName= "fa fa-pinterest" btnName= "pinterest" hrefValue="https://pin.it/31U2Eky"></Button>
+    <Button iconName= "fa fa-youtube" btnName= "youtube" hrefValue="https://bit.ly/3xCb4Ye"></Button>
+    <Button iconName= "fa fa-behance" btnName= "behance" hrefValue="https://bit.ly/3zJY2do"></Button>
+
     <div class="item-2">
         <ul id="icons" class="social-icons">
             <li class="website">

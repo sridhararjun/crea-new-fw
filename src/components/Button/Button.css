@@ -1,0 +1,102 @@
+.listWrapper {
+    padding: 0;
+    list-style: none;
+    background-color: grey;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+    margin: 30px 0;
+    background: url('../LandingComponent/gold\ border.jpg');
+}
+
+.listWrapper a {
+    color: black;
+    text-decoration: none;
+}
+
+.listWrapper i {
+    /* margin-left: 20px; */
+    position: relative;
+    top: -8px;
+    right: 22px;
+}
+
+.btnContent {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: -9px;
+}
+
+.btnContent p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.listWrapper:hover {
+    /* margin-top: 0px; */
+    -moz-box-shadow: 0px 0px 4px 1px grey;
+    -webkit-box-shadow: 0px 0px 4px 1px grey;
+    box-shadow: 0px 0px 4px 1px grey;
+    transform: scale(0.90);
+    /* Scaling button to 0.98 to its original size */
+}
+
+.listWrapper .outerborder {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+.listWrapper .outerborder:before {
+    border-radius: 100%;
+    display: block;
+    /* background: white; */
+    content: ' ';
+    /* width: 30px;
+    height: 30px; */
+}
+
+.social-iconss a {
+    display: block;
+    height: 50px;
+}
+
+.social-iconss a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: inline-block;
+    background: linear-gradient(45deg, #9e9027, #e6cb00);
+    transition: all 1s ease-out;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+
+.social-iconss a:hover:before {
+    transform: scale(0);
+    transition: all 1ms ease-in;
+}
+
+.social-iconss a:hover i {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    color: #000;
+    /* background: -webkit-linear-gradient(45deg, #dfdedb, #b1b0a8); */
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+    /* -webkit-transform: translate(110px, 0);
+        -moz-transform: translate(110px, 0);
+        -ms-transform: translate(110px, 0);
+        -o-transform: translate(110px, 0);
+        transform: translate(110px, 0);
+        background: goldenrod; */
+}
